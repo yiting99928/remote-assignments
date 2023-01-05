@@ -79,17 +79,17 @@ header{
 }
 
 header h1{
-    font-size: 1.2em;
-    
+    font-size: 1.2em;    
 }
 .banner{
-    text-align: center;
-    padding: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
     background-color: #D2E9FF;
 }
 .banner h2{
     font-size: 2em;
-    white-space:nowrap;
 }
 .container{
     margin: 0 auto;
