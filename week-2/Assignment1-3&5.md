@@ -1,6 +1,6 @@
 # Assignment1~3
 
-## Assignment 1: Function and Array
+### Assignment 1: Function and Array
 
 ```javascript=
 //Assignment 1解法一
@@ -27,7 +27,7 @@ console.log(max([5, 2, 7, 1, 6])); // expected output: 7
 
 <br>
 
-## Assignment 2: Function and Object
+### Assignment 2: Function and Object
 
 ```javascript=
 function calculate(args) {
@@ -46,7 +46,7 @@ console.log(calculate({ n1: 1, n2: 6, op: "x" }));
 
 <br>
 
-## Assignment 3: Function, Array, and Object
+### Assignment 3: Function, Array, and Object
 
 ```javascript=
 function calculate3(data) {
@@ -78,4 +78,23 @@ const discountedPrice = calculate3({
   ]
 });
 console.log(discountedPrice)
+```
+<br>
+
+### Assignment 5: Algorithm (Advanced Optional)
+```javascript=
+function twoSum(nums, target) {
+  let arr=[];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0; j < nums.length; j++) {
+      if(nums[i] + nums[j]===target){
+        console.log(nums[i] + ',' + nums[j])
+        arr.push(i,j)
+        return arr
+      }
+    }
+  }
+}
+
+twoSum([2, 7, 11, 15], 9)
 ```
