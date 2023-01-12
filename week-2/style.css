@@ -120,9 +120,6 @@ header h1{
 .header-nav {
     display: none;
 }
-.header-active{
-  display: none;
-}
 .menu-active{
   position: fixed;
   top: 0;
@@ -152,9 +149,9 @@ header h1{
     flex-wrap: wrap;
     justify-content: center;        
   }
-  .secondary-boxes{
+  /* .secondary-boxes{
     display: none;
-  }
+  } */
 }
 @media screen and (min-width: 800px){
     .header-nav{

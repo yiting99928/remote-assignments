@@ -5,12 +5,12 @@
 ```javascript=
 //Assignment 1解法一
 // function max(numbers){
-//   let maxnum=-Infinity;
+//   let maxNum=-Infinity;
 //   for(let number of numbers){
-//     if(number > maxnum){
-//       maxnum = number
+//     if(number > maxNum){
+//       maxNum = number
 //     }
-//  }return maxnum
+//  }return maxNum
 // }
 
 //Assignment 1解法二

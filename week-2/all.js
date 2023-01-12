@@ -10,12 +10,14 @@ banner.addEventListener('click',(e)=>{
 })
 
 menuToggle.addEventListener('click',(e)=>{
-    headerActive.style.display = "block";
+    headerActive.removeAttribute('style');
 })
 closeToggle.addEventListener('click',(e)=>{
     headerActive.style.display = "none";
 })
 btn.addEventListener('click',(e)=>{
     e.preventDefault();
-    secondaryBoxes.style.display = "flex"
+    secondaryBoxes.style.display=='none'? 
+    secondaryBoxes.removeAttribute('style') : 
+    secondaryBoxes.style.display='none';
 })
