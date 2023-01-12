@@ -1,8 +1,6 @@
-# Assignment1~3&5
 
-### Assignment 1: Function and Array
+//Assignment 1: Function and Array
 
-```javascript=
 function max(numbers) {
   let maxNum;
   for (let i = 0; i < numbers.length; i++) {
@@ -12,13 +10,9 @@ function max(numbers) {
 }
 console.log(max([1, 2, 4, 5])); // expected output: 5
 console.log(max([5, 2, 7, 1, 6])); // expected output: 7
-```
 
-<br>
+//Assignment 2: Function and Object
 
-### Assignment 2: Function and Object
-
-```javascript=
 function calculate(args) {
   let arr = Object.values(args);
   let ans = arr[2] == "+" ? arr[0] + arr[1] : arr[2] == "-" ? arr[0] - arr[1] : "Not supported";
@@ -31,13 +25,9 @@ console.log(calculate({ n1: 5, n2: 2, op: "-" }));
 // expected output: 3
 console.log(calculate({ n1: 1, n2: 6, op: "x" }));
 // expected output: 'Not supported'
-```
 
-<br>
+//Assignment 3: Function, Array, and Object
 
-### Assignment 3: Function, Array, and Object
-
-```javascript=
 function calculate3(data) {
   let arr=[];
   for(i=0; i<data.products.length; i++){
@@ -66,11 +56,9 @@ const discountedPrice = calculate3({
   ]
 });
 console.log(discountedPrice)
-```
-<br>
 
-### Assignment 5: Algorithm (Advanced Optional)
-```javascript=
+// Assignment 5: Algorithm (Advanced Optional)
+
 function twoSum(nums, target) {
   let arr=[];
   for (let i = 0; i < nums.length; i++) {
@@ -84,4 +72,3 @@ function twoSum(nums, target) {
 }
 
 twoSum([2, 7, 11, 15], 9)
-```

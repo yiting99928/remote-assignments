@@ -133,7 +133,7 @@ header h1{
   margin-bottom: 2rem;
 }
 .closeToggle{
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   display: block;
@@ -149,9 +149,6 @@ header h1{
     flex-wrap: wrap;
     justify-content: center;        
   }
-  /* .secondary-boxes{
-    display: none;
-  } */
 }
 @media screen and (min-width: 800px){
     .header-nav{
