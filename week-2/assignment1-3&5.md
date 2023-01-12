@@ -3,17 +3,6 @@
 ### Assignment 1: Function and Array
 
 ```javascript=
-//Assignment 1解法一
-// function max(numbers){
-//   let maxNum=-Infinity;
-//   for(let number of numbers){
-//     if(number > maxNum){
-//       maxNum = number
-//     }
-//  }return maxNum
-// }
-
-//Assignment 1解法二
 function max(numbers) {
   let maxNum;
   for (let i = 0; i < numbers.length; i++) {
@@ -54,7 +43,6 @@ function calculate3(data) {
   for(i=0; i<data.products.length; i++){
     arr.push(data.products[i].price)
   }
-  // console.log(arr);
   let sum=0;
   arr.forEach((item)=>sum+=item*data.discount)
   return sum
@@ -88,7 +76,6 @@ function twoSum(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = 0; j < nums.length; j++) {
       if(nums[i] + nums[j]===target){
-        console.log(nums[i] + ',' + nums[j])
         arr.push(i,j)
         return arr
       }
