@@ -14,8 +14,8 @@ console.log(max([5, 2, 7, 1, 6])); // expected output: 7
 //Assignment 2: Function and Object
 
 function calculate(args) {
-  let arr = Object.values(args);
-  let ans = arr[2] == "+" ? arr[0] + arr[1] : arr[2] == "-" ? arr[0] - arr[1] : "Not supported";
+  const arr = Object.values(args);
+  const ans = arr[2] == "+" ? arr[0] + arr[1] : arr[2] == "-" ? arr[0] - arr[1] : "Not supported";
   return ans;
 }
 
@@ -29,7 +29,7 @@ console.log(calculate({ n1: 1, n2: 6, op: "x" }));
 //Assignment 3: Function, Array, and Object
 
 function calculate3(data) {
-  let arr=[];
+  const arr=[];
   for(i=0; i<data.products.length; i++){
     arr.push(data.products[i].price)
   }
@@ -60,7 +60,7 @@ console.log(discountedPrice)
 // Assignment 5: Algorithm (Advanced Optional)
 
 function twoSum(nums, target) {
-  let arr=[];
+  const arr=[];
   for (let i = 0; i < nums.length; i++) {
     for (let j = 0; j < nums.length; j++) {
       if(nums[i] + nums[j]===target){
