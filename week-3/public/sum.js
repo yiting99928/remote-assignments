@@ -1,7 +1,24 @@
 const numSubmit = document.querySelector('.numSubmit');
 const numInput = document.querySelector('.numInput');
 
+/*fetch*/
+numSubmit.addEventListener('click', e => {
+    e.preventDefault();
+    getData(numInput.value);
+    document.querySelector('.numForm').reset();
+})
+
+function getData(num) {
+    fetch(`http://localhost:3000/getData?number=${num}`)
+        .then(res => {
+            res.text().then(result => {
+                document.querySelector('.sumNum').textContent = result
+            })
+        })
+        .catch(error => console.error('Error:', error))
+}
 /*Ajax + Promise*/
+/*
 numSubmit.addEventListener('click', e => {
     e.preventDefault();
     getData(numInput.value)
@@ -33,7 +50,7 @@ function getData(num) {
         req.send();
     })
 }
-
+*/
 /*axios*/
 /*
 numSubmit.addEventListener('click', e => {
@@ -51,6 +68,7 @@ function getData(num) {
         })
 }
 */
+
 
 
 
