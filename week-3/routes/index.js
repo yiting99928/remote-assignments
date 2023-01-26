@@ -22,17 +22,9 @@ router.get('/myName', (req, res) => {
 
 router.post('/trackName', (req, res) => {
     res.cookie('username', req.body.name);
-    console.log(req.body.name);
     res.redirect('/myName')
 });
 
-router.get('/trackName', (req, res) => {
-    const name = req.cookies.username;
-    const trackName = req.query.name;
-    name == trackName ?
-        res.send("username:" + trackName)
-        : res.send('no username')
-})
 
 
 module.exports = router;
