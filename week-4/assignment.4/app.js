@@ -3,7 +3,7 @@ const btn = document.querySelector('.btn');
 
 let cardData = [];
 
-//預涉5筆資料
+//預設5筆資料
 (function init() {
     getData(5);
 })()
