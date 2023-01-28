@@ -12,7 +12,7 @@ const Header = () => {
         </header>
     )
 }
-const MenuToggle =()=>{
+const MenuToggle =() => {
     const [show, setShow] = useState(false);
     // 前者放變數 後者放方法(大多數使用set)用來寫入前者的值
     const onClick = () => { setShow(!show)}
@@ -53,7 +53,7 @@ const Container = () => {
     )
 }
 
-const CallToAction =()=>{
+const CallToAction =() => {
         const [show, setShow] = React.useState(false);
         const onClick = (e) => {
             setShow(!show);
