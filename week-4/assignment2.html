@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assignment2</title>
 </head>
 
@@ -12,38 +12,37 @@
     <ul class="content"></ul>
     <script>
         function ajax(url) {
-            return (
-                fetch(url)
-                    .then((response) => response.text())
-                    .catch(function (error) {
-                        console.log(error);
-                    })
-            );
+            return fetch(url)
+                .then((response) => response.text())
+                .catch(function (error) {
+                    console.log(error);
+                });
         }
         function render(data) {
-            let content = document.querySelector(".content");
-            let productData = JSON.parse(data);
+            const content = document.querySelector(".content");
+            const productData = JSON.parse(data);
             // console.log(productData);
             let str = "";
-            productData.forEach((item, index) => 
-            (str += 
-            `<li>item:${index + 1}</li>
+            productData.forEach(
+                (item, index) =>
+                (str += `<li>item:${index + 1}</li>
             <li>name:${item.name}</li>
             <li>price:${item.price}</li>
             <li>description:${item.description}</li>
             <br>
-            `));
+            `)
+            );
 
             content.innerHTML = str; //印出結果
             // console.log(content)
         }
 
-        const url = "https://appworks-school.github.io/Remote-Assignment-Data/products";
+        const url =
+            "https://appworks-school.github.io/Remote-Assignment-Data/products";
 
         ajax(url).then((data) => {
             render(data);
         });
-
     </script>
 </body>
 
